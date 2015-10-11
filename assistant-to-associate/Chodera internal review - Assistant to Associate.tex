@@ -13,8 +13,12 @@
 %\addtolength{\oddsidemargin}{-.500in}
 %\addtolength{\evensidemargin}{-.500in}
 %\addtolength{\textwidth}{2.00in}
-\addtolength{\topmargin}{-.875in}
-\addtolength{\textheight}{1.75in}
+
+%\addtolength{\topmargin}{-.875in}
+%\addtolength{\textheight}{1.75in}
+
+\addtolength{\topmargin}{-1.125in}
+\addtolength{\textheight}{2.0in}
 
 \addtolength{\oddsidemargin}{-.375in}
 \addtolength{\evensidemargin}{-.375in}
@@ -92,6 +96,12 @@
 \newcommand{\spaceSoc}{\vspace{0.5ex}}
 \newcommand{\spacePost}{\vspace{0.5ex}}
 
+% Modify section spacing
+%\usepackage{titlesec}
+%\titlespacing*{\section}{0pt}{0.2\baselineskip}{\baselineskip}
+%\titlespacing*{\subsection}{0pt}{0.2\baselineskip}{\baselineskip}
+%\titlespacing*{\subsubsection}{0pt}{0.2\baselineskip}{\baselineskip}
+
 % GRAPHICS
 \usepackage{graphicx}
 
@@ -100,8 +110,10 @@
 \usepackage[normalem]{ulem} 
 
 \usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 \fancyhf{}
+%\fancyfoot[LE,CO]{{\small\textsc{John D. Chodera - Sloan Kettering Institute - \thepage}}}%
 \rfoot{\small\textsc{John D. Chodera - Sloan Kettering Institute - \thepage}}
 
 % Clean up font spacing with micro type
@@ -190,12 +202,12 @@ Undergraduate research with \href{http://www.its.caltech.edu/~phplab/phplab.html
 
 \section*{Research interests}
 
-\noindent{Rational computational design of allosteric small-molecule therapeutics and chemical biology probes}\\
+\noindent{Rational computational design of allosteric small-molecule inhibitors and therapeutics}\\
 \noindent{Kinase inhibitor selectivity and evolution of therapeutic resistance in cancer}\\
 \noindent{Biomolecular dynamics and conformational heterogeneity}\\
-\noindent{Multiscale modeling of the effects of small molecules on biochemical pathways}\\
 \noindent{Error and uncertainty in biophysical measurements}\\
 \noindent{Computational chemistry, molecular modeling, and forcefield development}\\
+\noindent{Multiscale modeling of the effects of small molecules on biochemical pathways}\\
 
 \eject
 
@@ -214,7 +226,7 @@ Google Scholar statistics: \href{http://goo.gl/qO0JW}{http://goo.gl/qO0JW}\\
 
 \newarticle{automatic-equilibration-detection.pdf}{{\bf Chodera JD}. A simple method for automated equilibration detection in molecular simulations. \emph{J.~Chem.~Theor.~Comput.}, in press.}{bioRxiv preprint}{http://dx.doi.org/10.1101/021659}{We present a simple approach to automatically determining the equilibrated region of a molecular simulation, a longstanding challenge formerly without a good solution.}
 
-\newarticle{thermoml-benchmark.pdf}{Beauchamp KA, Behr JM, Rustenburg AS, Bayly CI, Kroenlein K, and {\bf Chodera JD}. Towards automated benchmarking of atomistic forcefields: Neat liquid densities and static dielectric constants from the {ThermoML} data archive.  \emph{J. Phys. Chem. B}, in press.}{ar$\chi$iv preprint}{http://arxiv.org/abs/1506.00262}{Molecular mechanics forcefields are critical to computed-guide drug design, but the benchmarking and improvement of these forcefields has been hindered by the lack of high-quality machine-readable physical property datasets. We show how the NIST-curated ThemoML dataset, which stores physical property data in an IUPAC-standard format, can eliminate these roadblocks and reveal issues with current generation forcefields.}
+\newarticle{thermoml-benchmark.pdf}{Beauchamp KA, Behr JM, Rustenburg AS, Bayly CI, Kroenlein K, and {\bf Chodera JD}. Towards automated benchmarking of atomistic forcefields: Neat liquid densities and static dielectric constants from the {ThermoML} data archive.  \emph{J. Phys. Chem. B}, 199:12912, 2015.}{DOI}{http://t.co/xhoJzSQKo0}{Molecular mechanics forcefields are critical to computer-guide drug design, but the benchmarking and improvement of these forcefields has been hindered by the lack of high-quality machine-readable physical property datasets. We show how the NIST-curated ThemoML Archive, which stores physical property data in an IUPAC-standard XML format, can eliminate these roadblocks and reveal issues with current generation forcefields.}
 
 \newarticle{L-2HG.pdf}{Intlekofer AM, Dematteo RG, Venetti S, Finley LWS, Lu Chao, Judkins AR, Rutenburg AS, Grinaway PB, {\bf Chodera JD}, Cross JR, and Thompson CB. Hypoxia introduces production of {L-2-Hydroxyglutarate}. {\it Cell Metabolism} 22:1--8, 2015}{DOI}{http://dx.doi.org/10.1016/j.cmet.2015.06.023}{Molecular docking is used to demonstrate the potential for alternative substrate usage by isocitrate dehydrogenases under hypoxic conditions in cancer.}
 
@@ -848,6 +860,25 @@ None
 % STATEMENT OF RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\addtolength{\oddsidemargin}{-.375in}
+%\addtolength{\evensidemargin}{-.375in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\marginparsep}{-10pt}
+%\addtolength{\marginparwidth}{+15pt}
+
+%\addtolength{\oddsidemargin}{-.75in}
+%\addtolength{\evensidemargin}{-.75in}
+%\addtolength{\textwidth}{0.5in}
+%\addtolength{\marginparsep}{-10pt}
+%\addtolength{\marginparwidth}{+15pt}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\textwidth}{7.5in}
+\setlength{\marginparsep}{0pt}
+ \fancyfootoffset{-0.5in}
+
 \renewcommand{\baselinestretch}{1.0}
 \setlength{\parskip}{0.25em}
 
@@ -864,7 +895,7 @@ Major collaborations with both academic laboratories and pharmaceutical companie
 \subsection*{Brief investigator background}
 
 I received my {\bf B.S.~in Biology from Caltech}, which included a broad set of elective coursework composed of a mixture of mathematics (both pure and applied), physics (quantum, classical, and statistical mechanics), physical chemistry, computer science, electrical engineering, and machine learning.  
-As a Ph.D.~student in the {\bf UCSF Biophysics Ph.D.~program}, I utilized these quantitative tools to tackle various problems in protein folding in biomolecular dynamics.
+As a Ph.D.~student in the {\bf Biophysics Ph.D.~program at the University of California, San Francisco}, I utilized these quantitative tools to tackle various problems in protein folding in biomolecular dynamics.
 Working with Peter Kollman, we probed the mechanism behind the incredible catalytic proficiency of orotidine decarboxylase~\cite{lee-chong-chodera-kollman:2001:jacs:odcase}.
 In the laboratory of Ken Dill, I helped pioneer an approach that allows the long-time stochastic conformational dynamics of biological macromolecules to be understood from many molecular dynamics simulations, the result of a collaboration with Vijay Pande (Stanford) and Frank No\'{e} (Freie Universit\"{a}t Berlin)~\cite{chodera:2006:mms:long-time-dynamics,chodera:jcp:2007,bacallado:2009:jcp:detailed-balance-constraint,temperature-dependent-markov-models,noe:pnas:2011:dynamical-fingerprints,noe:jcp:2011:msm-review}, and William C.~Swope at IBM Almaden Research.
 The resulting \emph{Markov model} formalism allows direct connections between atomistic simulations and experimental measurements in a manner that provides mechanistic insight~\cite{chodera:2006:mms:long-time-dynamics,chodera:jcp:2007}, and is now used by laboratories throughout the world to probe diverse aspects of protein dynamics and biophysics; our key 2007 paper~\cite{chodera:jcp:2007} has been cited over 360 times.
@@ -879,44 +910,73 @@ Working with the thriving single-molecule biophysics community at UC Berkeley, I
 
 \subsection*{Primary research projects}
 
+\vspace{-0.3cm}
 \subsubsection*{Selective kinase inhibition and resistance}
+\vspace{-0.3cm}
 
-{\color{red}[JDC: Kinase selectivity maps and corresponding inhibitors.]}
-
-Selective kinase inhibitors---such as the blockbuster drug imatinib---have shown tremendous promise in the treatment of cancers involving kinase dysregulation.
+Selective kinase inhibitors---such as the blockbuster drug imatinib (Figure~\ref{figure:kinase-inhibitor-selectivity}, left)---have shown tremendous promise in the treatment of cancers involving kinase dysregulation.
 Currently, 27 small molecule targeted kinase inhibitors have received FDA approval, representing a substantial fraction of the \$37B U.S.~market for oncology drugs.
 Despite this, major challenges remain in their widespread application in cancer treatment.
 First, the design of potent inhibitors with desired selectivity profiles is difficult and expensive; existing approaches---based on screening targeted libraries followed by rounds of structure-guided lead optimization---generally require several years and hundreds of millions of dollars to produce a clinical candidate~\cite{paul:2010:nrdd:pharma-research-development}.
-Second, these molecules are still generally poorly selective, with the risk that off-target effects will minimize clinical success.
-Third, the emergence of drug resistance often limits the therapeutic benefit; over 90\% of metastatic cancer deaths are believed to result from drug-resistant forms~\cite{longley-johnston:j-pathol:2005:drug-resistance}.
-{\bf To meet these challenges, our laboratory develops quantitative models of kinase inhibitor recognition that will permit the rational design of kinase inhibitors with desired selectivity profiles, an understanding of mutational mechanisms of resistance, and prediction of drug sensitivity and resistance in individual patient tumors.}
+Second, these molecules are still generally poorly selective, with the risk that off-target effects will limit therapeutic index.
+Third, the often-rapid emergence of drug resistance can eliminate therapeutic benefit; over 90\% of metastatic cancer deaths are believed to result from drug-resistant forms~\cite{longley-johnston:j-pathol:2005:drug-resistance}.
+{\bf To meet these challenges, our laboratory develops quantitative physical models of kinase inhibitor efficacy to accelerate the rational design of kinase inhibitors with desired selectivity profiles, an understanding of mutational mechanisms of resistance, and prediction of drug sensitivity and resistance in individual patient tumors.}
 
 \emph{Design of kinase inhibitors with desired selectivities.}
-Recent evidence suggests that a dominant effect in the selectivity of imatinib for Abl over the closely-related Src is the larger \emph{conformational reorganization energetic cost} that Src must pay in order to adopt a binding-competent conformation~\cite{seeliger:2007:structure:imatinib-binding,simonson:j-biol-chem:2010:imatinib-selectivity,roux:pnas:2013:gleevec-selectivity}.
+Recent evidence suggests that a major effect in the selectivity of imatinib for Abl over the closely-related Src is the larger \emph{conformational reorganization energetic cost} that Src must pay in order to adopt a binding-competent conformation~\cite{seeliger:2007:structure:imatinib-binding,simonson:j-biol-chem:2010:imatinib-selectivity,roux:pnas:2013:gleevec-selectivity}.
 While failure to account for this contribution will frustrate the ability rationally engineer kinase inhibitors with desired selectivity profiles, it is difficult to measure these reorganization energies experimentally (Figure~\ref{figure:kinase-conformational-selection}).
 
-Instead, we use massively parallel molecular dynamics simulations on the Folding@home worldwide distributed computing platform~\cite{shirts-pande:science:2000:folding-at-home}---the planet's largest computer for biology---to computationally map the conformations accessible to kinases and their associated energetics.
-We have developed a tool \emph{Ensembler}~\cite{ensembler} to automate the modeling of human kinase catalytic domains onto all available kinase structures in order to broadly capture the variety of active and inactive conformations available to kinases, which are well-known to be highly conformationally heterogeneous. 
-We then employ the technique of constructing Markov state models (MSMs)---a technique we originally developed to study protein folding~\cite{chodera:2006:mms:long-time-dynamics,chodera:jcp:2007,noe:jcp:2011:msm-review}---to extract distinct conformational states, associated energetics, and interconversion rates.
-We are currently performing this analysis on a number of kinases of clinical interest, including Abl, Src, MEK, Aurora, DDR1, CK2, and SYK, with plans to automate the pipeline to generate these maps for all human kinase domains.
+\begin{wrapfigure}[14]{right}{0.45\textwidth}
+\vspace{-0.3cm}
+\includegraphics[width=0.44\textwidth]{figures/kinase-inhibitor-selectivity.pdf}
+\vspace{-0.3cm}
+\caption{\footnotesize \label{figure:kinase-inhibitor-selectivity} {\bf Kinase inhibitor selectivities are highly variable.}
+Even targeted inhibitors like imatinib (\emph{left}) can inhibit a multitude of kinases; unselective inhibitors like staurosporine (\emph{right}) are highly toxic.
+Adapted from~\cite{fabian:nature-biotech:2005:kinase-selectivity-map}.}
+\end{wrapfigure}
 
-To develop quantitative, predictive models of selective kinase inhibitors that will allow us to design new therapeutics with desired selectivities, we are developing new alchemical free energy calculations
+We use massively parallel molecular dynamics simulations on the Folding@home worldwide distributed computing platform~\cite{shirts-pande:science:2000:folding-at-home}---the planet's largest computer for biology---to computationally map the conformations accessible to kinases and their associated energetics.
+We have developed a tool (\emph{Ensembler}~\cite{ensembler}) to automate the modeling of human kinase catalytic domains onto all available kinase structures to broadly capture the variety of active and inactive conformations available to kinases, which are well-known to be highly conformationally heterogeneous. 
+We then employ the Markov state modeling (MSM) approach I originally developed to study protein folding~\cite{chodera:2006:mms:long-time-dynamics,chodera:jcp:2007,noe:jcp:2011:msm-review} to extract distinct conformational states, energetics, and activation kinetics.
+We are currently studying a number of kinases of interest to cancer and other diseases---ABL, SRC, MEK, MTOR, AURKA, DDR1, CK2, and SYK---and plan to extend this approach to all human kinases over the next two years.
 
-In addition to allowing for accurate inclusion of the reorganization energy for different kinases, these Markov state models also reveal opportunities for allosterically targeting kinases by identifying conformations that expose otherwise cryptic binding sites that are not visible in crystallographic structures unless an allosteric inhibitor has already been identified and cocrystallized~\cite{bowman-geissler:pnas:2012:cryptic-allosteric-sites}.
+To exploit these conformational and energetic maps of kinase conformations to understand kinase inhibitor affinity and selectivity, as well as facilitate the engineering of new selective inhibitors, we have developed a new generation of quantitatively accurate physical models based on alchemical free energy calculations~\cite{chodera:curr-opin-struct-biol:2011:drug-discovery}.
+These methods use molecular mechanics forcefields to rigorously compute binding affinities that include all relevant statistical mechanical effects, including entropic and enthalpic contributions.
+To make these techniques fast enough for practical use, we have built a new open-source GPU-accelerated code {\sc YANK}~\cite{wang:jcamd:2013:yank}.
+{\sc YANK} combines numerous algorithmic improvements we have previously developed to achieve quantitative accuracy~\cite{mobley-chodera-dill:2006:jcp:orientation-restraints,mobley-chodera-dill:2007:jctc:confine-and-release,shirts-mobley-chodera-pande:2007:jpcb:dispersion-corrections,chodera:jcp:2007,shirts-chodera:jcp:2008:mbar,noe:jcp:2011:msm-review,ncmc,chodera-shirts:jcp:2011:gibbs} into a single code, and has an open architecture that allows critically-needed new algorithms to deal with kinase-specific effects to be easily developed, implemented, and validated.
 
-{\color{red}[MORE HERE]}
+In addition to allowing for accurate inclusion of the reorganization energy for different kinases, our kinase MSMs also reveal opportunities for allosterically targeting kinases by identifying conformations that expose otherwise cryptic binding sites that are not visible in crystallographic structures unless an allosteric inhibitor has already been identified and cocrystallized~\cite{bowman-geissler:pnas:2012:cryptic-allosteric-sites}.
+As few allosteric kinase inhibitors have been identified to date, this represents an emerging opportunity for engineering new classes of effective therapeutics for cancer.
 
-This project is currently being prepared for an NIH R01 proposal submission in Feb 2016.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE: KINASE CONFORMATIONAL SELECTION
+\begin{figure}[tb]
+\begin{centering}
+\begin{overpic}[scale=0.22]{figures/src-abl-comparison-2}\put(-10,0){\bf A}\end{overpic}
+\begin{overpic}[scale=0.17]{figures/lee-craik-selectivity-image.pdf}\put(0,0){\bf B}\end{overpic}
+\begin{overpic}[scale=0.29]{figures/overall-binding-free-energy.pdf}\put(0,0){\bf C}\end{overpic}
+
+\end{centering}
+\vspace{-0.1cm}
+\caption{\footnotesize {\bf Conformational selection of kinase inactive states as a mechanism for inhibitor selectivity.}
+{\bf (A)} Crystal structures of imatinib bound to Abl and Src show almost no differences in binding contacts or structure, despite the large 4.7 kcal/mol difference in selectivity.
+{\bf (B)} Cartoon depiction of multiple conformational states with differing inhibitor binding competence (from Ref.~\cite{craik:2009:science:trapping-moving-targets}).
+The arrow (E) denotes the reorganization free energy required to adopt a particular conformational state. For inhibitor (blue) to bind the the binding-competent conformation (red), an energetic penalty must be paid to confine the kinase to the binding-competent state; favorable binding free energy can then cause this conformation to become the new lowest free energy ``ground state''.
+{\bf (C)} Illustration of how reorganization energy (red) and binding free energy (blue) give opposing contributions to overall binding free energy (black).
+\label{figure:kinase-conformational-selection}}
+\vspace{-0.4cm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \emph{Predicting the emergence of mutational resistance.}
 While drug resistance can emerge via multiple mechanisms, mutations in the therapeutic target drive the emergence of drug resistance in many patients; in commonly-targeted kinases such as Abl, missense mutations are responsible for resistance in as much as 90\% of cases~\cite{sawyers:cancer-cell:2002:abl-resistance}.
 Developing a quantitative and predictive understanding for how these inhibitors elicit resistance through mutational mechanisms would be of immense value, allowing the rapid design of second-generation inhibitors to circumvent resistance, the exploration of therapeutic combinations to minimize the emergence of resistance, and potentially the development of new therapeutics unlikely to elicit resistance.
 
-To predict resistance using physical modeling techniques, we hypothesize that resistance mutations ablate inhibitor binding affinity while maintaining some physically computable surrogate for activity, such as ATP and substrate peptide binding affinities.
-This allows us to compute a \emph{resistance index} for each possible point mutation, as well as construct enhanced sampling schemes that selectively search for point mutations that maximize the resistance index.
+To predict resistance using physical modeling techniques, {\bf we hypothesize that resistance mutations ablate inhibitor binding affinity while maintaining some physically computable surrogate for activity}, such as ATP and substrate peptide binding affinities.
+This allows us to compute a \emph{resistance index} for each possible point mutation, and to construct enhanced sampling schemes that selectively search for point mutations that maximize the resistance index.
 We are currently building a framework to perform these calculations using our GPU-accelerated alchemical binding free energy code YANK~\cite{yank}, using Abl and Aurora kinases as model systems.
 Predicted resistance mutations will be compared with clinically-identified lists of mutations, as well as tested in the laboratory through engineering these mutations into kinase catalytic domains that can be expressed recombinantly in bacteria.
-We utilize an automated fluorescence assay developed in-house to perform affinity measurements against a variety of small molecule kinase inhibitors of clinical interest, and assay activity using standard methods to determine whether these our hypothesis regarding physical surrogates for activity is sufficiently useful.
+We have developed an automated fluorescence assay to perform affinity measurements against a variety of small molecule kinase inhibitors of clinical interest, and use activity assays to determine whether our hypothesis regarding physical surrogates for activity is valid for individual kinases.
 
 \emph{Predicting drug sensitivity and resistance in patient tumors.}
 The ever-decreasing cost of next-generation sequencing technologies has spurred the deep sequencing of patient tumors with the goal of improving patient therapeutic outcomes by individually tailoring treatment plans to the specific genetic alterations found in that patient's cancer---potentially even only in small subpopulations of tumor cells.
@@ -935,34 +995,14 @@ Aided by an FGI Rapid Response grant, our laboratory is currently exploring the 
 Kinase production would be immediately followed by the fluorescence assay of kinase inhibitor affinity against all FDA-approved kinase inhibitors to aid the determination of whether inhibitors clinicians would like to use would be effective in light of tumor-specific mutations.
 We anticipate this would allow us to reduce the entire engineering and assay pipeline to turn around sensitivity/resistance results within a single day, which is sufficiently short to have substantial impact on therapeutic decisionmaking.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURE: KINASE CONFORMATIONAL SELECTION
-\begin{figure}[tb]
-\begin{centering}
-\begin{overpic}[scale=0.23]{figures/src-abl-comparison-2}\put(0,0){\bf A}\end{overpic}
-\begin{overpic}[scale=0.18]{figures/lee-craik-selectivity-image.pdf}\put(0,0){\bf B}\end{overpic}
-\begin{overpic}[scale=0.30]{figures/overall-binding-free-energy.pdf}\put(0,0){\bf C}\end{overpic}
-
-\end{centering}
-\vspace{-0.1cm}
-\caption{\footnotesize {\bf Conformational selection of kinase inactive states as a mechanism for inhibitor selectivity.}
-\color{red}
-{\bf (A)} Cartoon depiction of multiple conformational states with differing inhibitor binding competence (from Ref.~\cite{craik:2009:science:trapping-moving-targets}).
-The arrow (E) denotes the reorganization free energy required to adopt a particular conformational state. For inhibitor (blue) to bind the the binding-competent conformation (red), an energetic penalty must be paid to confine the kinase to the binding-competent state; favorable binding free energy can then cause this conformation to become the new lowest free energy ``ground state''.
-{\bf (B)} Illustration of total binding free energy of a selective inhibitor, with a free energy penalty for trapping or reorganizing the kinase into a binding-competent configuration, plus a favorable free energy for binding to this conformation.
-Significant binding to multiple conformations leads to more complex (but readily computable) overall binding affinities.
-\color{black}
-\label{figure:kinase-conformational-selection}}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
+\vspace{-0.3cm}
 \subsubsection*{Rational design of anticancer therapeutics}
+\vspace{-0.3cm}
 
 
-
+\vspace{-0.3cm}
 \subsubsection*{New biophysical measurement technologies}
+\vspace{-0.3cm}
 
 Due to its importance in drug design and the parameterization and validation of computational models for drug discovery, our lab is heavily invested in the development and extension of new biophysical measurement techniques capable of providing useful information about biomolecular energetics and ligand interactions.
 
@@ -973,52 +1013,82 @@ Due to its importance in drug design and the parameterization and validation of 
 
 \subsection*{Major collaborative projects}
 
-\subsubsection*{GPCR dynamics and activation (Scott Blanchard and Harel Weinstein, WCMC)}
-
 \subsubsection*{Selective inhibition of protein methyltransferases (Minkui Luo, MSKCC)}
+\vspace{-0.3cm}
+Protein lysine methyltransferases (PKMTs) regulate numerous epigenetic processes, and there is increasing evidence for their dysregulation playing a role in cancer through downregulation of tumor suppressors or upregulation of oncogenes that promote cancer progression and proliferation~\cite{Copeland:2009:Nat.Rev.DrugDiscov.}.
+There is tremendous interest in utilizing a variety of selective inhibitors to illuminate the role of PKMTs in disease and develop potential therapeutics, but few such inhibitors exist.
+Like kinases, PKMTs are conformationally heterogeneous, providing an opportunity to exploit binding to distinct conformations to achieve selectivity.
+Funded by a STARR Cancer Consortium grant with Minkui Luo, we are working to apply the same methodology used for designing selective kinase inhibitors to aid the Luo lab in developing useful chemical probes for elcudiating PKMT function.
 
+\vspace{-0.5cm}
+\subsubsection*{GPCR dynamics and activation (Scott Blanchard and Harel Weinstein, WCMC)}
+\vspace{-0.3cm}
+G-protein coupled receptors (GPCRs) represent a significant fraction of all drug targets, and are gradually being recognized as playing important roles in tumor progression and metastasis~\cite{Dorsam:2007:Nat.Rev.Cancera}.
+In collaboration with Scott Blanchard and Harel Weinsteil (WCMC), we are working to illuminate the detailed conformational changes involved in biased agonism and signal transduction using massively parallel simulations on Folding@home that will bridge from static crystal structures to dynamic single-molecule FRET data collected in the Blanchard lab.
+The resulting detailed model will aid the subsequent design of new GPCR biased agonists and inhibitors.
+
+\vspace{-0.5cm}
 \subsubsection*{Activating mutants of MTOR (James Hsieh, MSKCC)}
+\vspace{-0.3cm}
+The MSK-IMPACT panel has identified a large diversity of tumor-associated mutations in the MTOR gene, an atypical serine/threonine kinase that acts as a master growth regulator.
+By engineering these mutations into cell lines, the Hsieh lab has demonstrated that many of these mutations are activating, and identified several distinct mechanistic classes of mutations.
+Funded by an FGI grant, we are working with the Hsieh lab to elucidate the structural and energetic ramifications of these mutations with the goal of identifying opportunities for therapeutic intervention.
 
-\subsubsection*{Allosteric inhibition and slow off-rate inhibition of CK2 and SYK (Melissa Vasbinder, AstraZenea)}
+\vspace{-0.5cm}
+\subsubsection*{Allosteric and slow off-rate inhibition of CK2 and SYK (Melissa Vasbinder, AstraZenea)}
+\vspace{-0.3cm}
+In a closed system, the binding affinity of an inhibitor for its target fully determines target inhibition, but in an open system such as a cell where drugs can be exported or metabolized and cleared from the blood, the off-rate of an inhibitor can more directly determine the efficacy of inhibition~\cite{copeland:nrdd:2007:residence-time}.
+Through a funded collaboration with Astra-Zeneca, we are exploring the mechanistic origins of surprisingly slow off-rate inhibitors they discovered for CK2 (now a dead project), and examining opportunities for engineering allosteric inhibitors or slow-off-rate inhibitors for SYK.
 
+\vspace{-0.3cm}
 \subsubsection*{Protonation state effects in kinase inhibitor recognition (Marilyn Gunner, CCNY)}
+\vspace{-0.3cm}
+Recently, the complicated role that protonation states play in the binding of imatinib to Abl has suggested that both \emph{equilibrium mixtures} of protonation states and \emph{changes} in protonation state upon binding are relevant to accurately describing inhibitor binding~\cite{szakacks:j-med-chem:2005:acid-base-profiling-of-imatinib,seeliger:2007:structure:imatinib-binding,roux:pnas:2013:gleevec-selectivity}, posing an enormous challenge to computational drug design paradigms, which do not consider protonation state effects explicitly.
+We believe protonation states may play a much larger role in both on- and off-target kinase inhibition than previously appreciated, since over \emph{half} of all FDA-approved small molecule kinase inhibitors have two or more protonation states predicted to be accessible during binding.
+Working with Marilyn Gunner (CCNY), who has extensive experience in protonation state modeling in proteins, we are embarking on a large-scale effort to elucidate the role of protonation state effects in kinase inhibitor binding and explicitly allow protonation state effects to be considered in inhibitor design and profiling of off-target effects.
+We plan to apply for NIH funding for this project in early 2016.
 
+\vspace{-0.3cm}
 \subsubsection*{MHC-peptide-TCR interactions (David Scheinberg, MSKCC)}
-
-\begin{wrapfigure}[14]{right}{0.40\textwidth}
-\vspace{-2cm}
-\includegraphics[width=0.38\textwidth]{figures/1AO7.pdf}
-\vspace{-2cm}
-\caption{\footnotesize \label{fig:mhc-peptide-tcr} {\bf MHC-peptide-TCR complex.}
-Human major histocompatibility complex (MHC; \emph{red}) HLA-A2 and T cell receptor (TCR; \emph{green}) is shown in complex with the viral TAX peptide (LLFGYPVYV; \emph{yellow}) [rcsbid:1AO7].}
-\end{wrapfigure}
+\vspace{-0.3cm}
 
 Recently, the development of immuotherapies that promote the recognition of mutated tumor antigen has spurred the desire to develop quantitative, predictive models for for the association of major histocompatibility complex (MHC) with T cell receptors (TCR) mediated by antigen peptide binding interactions, in order to permit the development of novel biologics that may be useful in cancer treatment.
 These biologics may be recombinant variants of TCRs, TCR-mimicking antibodies (TCRm), or even synthesized antigen peptides for use as potential vaccines.
 In all of these cases, a detailed, accurate model for the affinity of the MHC-peptide-TCR/TCRm complex (including the details of an individual's MHC variants) for both cancer and self antigen peptides is essential.
 
-While simple additive models derived from experimental data have been proposed~\cite{antigen-affinity-models}, these models are insufficiently accurate for the purpose of therapeutic engineering.
+\begin{wrapfigure}[15]{right}{0.40\textwidth}
+\vspace{-2.6cm}
+\includegraphics[width=0.38\textwidth]{figures/1AO7.pdf}
+\vspace{-2.5cm}
+\caption{\footnotesize \label{figure:mhc-peptide-tcr} {\bf MHC-peptide-TCR complex.}
+Human major histocompatibility complex (MHC; \emph{red}) HLA-A2 and T cell receptor (TCR; \emph{green}) is shown in complex with the viral TAX peptide (LLFGYPVYV; \emph{yellow}) [rcsbid:1AO7].}
+\end{wrapfigure}
+
+While simple experiment-derived additive models derived from experimental data have been proposed~\cite{Birnbaum:2014:Cell}, these models are insufficiently accurate for the purpose of therapeutic engineering.
 We are working with Ron Gejman and David Scheinberg at MSKCC to utilize atomistically detailed free energy calculations for this purpose.
 First, we are exploring what biophysical detail is necessary to recapitulate known affinities for the MHC-peptide-TCR ternary complex.
 Next, we will utilize advanced techniques for sampling over sequence space to perform the computational equivalent of evolution selection experiments, selecting for peptide sequences that bind tightly to specific MHC-TCR complexes.
 In addition to aiding the development of novel therapeutics, accurate computational models of MHC-peptide-TCR complex affinity will also be useful in predicting the degree of therapeutic response from individual tumor sequences.
 
+\vspace{-0.3cm}
 \subsubsection*{Human serum albumin binding and interference (Ron Blasberg, MSKCC)}
+\vspace{-0.3cm}
 
 \begin{wrapfigure}[13]{right}{0.40\textwidth}
-\vspace{-2cm}
+\vspace{-2.3cm}
 \includegraphics[width=0.38\textwidth]{figures/hsa-binding-sites.pdf}
-\vspace{-2cm}
-\caption{\footnotesize \label{fig:hsa} {\bf Human serum albumin.}
-(Characterized drug and fatty acid binding sites are shown.}
+\vspace{-2.5cm}
+\caption{\footnotesize \label{figure:hsa} {\bf Human serum albumin.}
+Characterized drug and fatty acid binding sites are shown.
+Adapted from~\cite{fasano:iubmb-life:2005:hsa-review}.}
 \end{wrapfigure}
 
-Binding to the abundant human serum protein albumin (HSA) is well-known to modulate the pharmacokinetics of drugs, including common drugs such as aspirin and ibuprofen~\cite{fasano:iubmb-life:2005:hsa-review}.
+Binding to the abundant human serum protein albumin (HSA, Figure~\ref{figure:hsa}) is well-known to modulate the pharmacokinetics of drugs, including common drugs such as aspirin and ibuprofen~\cite{fasano:iubmb-life:2005:hsa-review}.
 While this may sometimes be advantageous, in many cases, HSA binding prevents accumulation of bioactive conformations at target sites of interest.
 The Blasberg lab encountered just such a case with a radiolabeled dye molecule intended for the visualization of CXCR-expressing cells in brain cancer associated with poor prognosis: While the molecule binds CXCR effectively and crosses the blood-brain barrier, the molecule binds HSA to a degree that useful quantities cannot accumulate in the brain.
 
 To enable these radioligands to be useful in imaging, we are working with the Blasberg lab to identify safe, well-tolerated drugs that could be coadministered with the label compound to saturate the HSA binding site and ensure sufficient compound can reach target receptors in the brain.
-While complicated by the fact that HSA has at least seven characterized binding sites, this could function as a novel approach to modulating the pharmacokinetics of HSA-binding drugs or imaging agents.
+While complicated by the fact that HSA has at least seven characterized binding sites (Figure~\ref{figure:hsa}), this could function as a novel approach to modulating the pharmacokinetics of HSA-binding drugs or imaging agents.
 Our approach first aims to identify the binding sites to which the radioimaging compound has high affinity using a novel GPU-accelerated binding free energy computation technique we developed for characterizing multiple weak binding events.
 We then utilize automated isothermal titration calorimetry and fluorescence competition assays to experimentally verify both binding sites (using well-characterized reporter compounds) and compound affinity.
 Once candidate well-tolerated competitive drugs are identified, Blasberg lab will carry out subsequent experiments in rodents to demonstrate the practicality of this approach.
@@ -1030,8 +1100,9 @@ We are currently developing this concept into a funding proposal with James Fras
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \eject
-\small
-
+\footnotesize
+\setlength{\parskip}{0em}
+\renewcommand{\baselinestretch}{1.0}
 \bibliographystyle{prsty} 
 \bibliography{chodera-research.bib}
 
